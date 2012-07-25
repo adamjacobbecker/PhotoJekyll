@@ -2,18 +2,18 @@ a {
   cursor: pointer;
 }
 
-header {
+.header {
   padding: 25px 0 0 125px;
 }
 
-.site-title {
+.site-title a {
   font-size: 23px;
   color: #444;
   text-decoration: none;
   font-weight: bold;
 }
 
-.site-title:hover {
+.site-title a:hover {
   color: #000;
 }
 
@@ -22,7 +22,7 @@ header {
   list-style: none;
   padding: 0;
   float: left;
-  padding: 35px 0 0 120px;
+  padding: 35px 0 0 0;
   margin: 0;
 }
 
@@ -86,3 +86,41 @@ header {
 
 .photo-nav a:hover {
   color: #000;
+}
+
+@media all and (max-width: 1020px) {
+
+  .header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+  }
+
+  .nav {
+    padding-top: 10px;
+    margin-left: -5px;
+  }
+
+  .nav li {
+    display: inline;
+  }
+
+  .nav-content-spacer {
+    clear: both;
+  }
+
+  .content {
+    margin: 50px auto 0;
+  }
+
+}
+
+@media all and (max-width: 700px) {
+  .content {
+    width: 90%;
+  }
+
+  .content img {
+    width: 100%;
+  }
+}

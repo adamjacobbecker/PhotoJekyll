@@ -25,17 +25,21 @@
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
-    <a href="/" class="site-title">WALKER OLESEN</a>
-  </header>
-  
-  <ul class="nav">
-    {% for post in site.posts %}
-      <li class="{% if post.url == page.url %}current{% endif %}
-                 {% if post.layout == 'default' %}lighter{% endif %}">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="header">
+    <div class="site-title">
+      <a href="/">WALKER OLESEN</a>
+    </div>
+    
+    <ul class="nav">
+      {% for post in site.posts %}
+        <li class="{% if post.url == page.url %}current{% endif %}
+                   {% if post.layout == 'default' %}lighter{% endif %}">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="nav-content-spacer"></div>
 
   <div role="main" class="content">
