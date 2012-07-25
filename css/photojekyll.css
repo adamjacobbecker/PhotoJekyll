@@ -1,0 +1,57 @@
+a {
+  cursor: pointer;
+}
+
+header {
+  padding: 40px 0 0 120px;
+}
+
+.site-title {
+  font-size: 24px;
+  color: #444;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: #000;
+}
+
+.nav {
+  font-size: 13px;
+  list-style: none;
+  padding: 0;
+  float: left;
+  padding: 40px 0 0 120px;
+  margin: 0;
+}
+
+.nav li {
+
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #444;
+  padding: 2px 6px;
+  line-height: 200%;
+}
+
+.nav li.current a {
+  background-color: #bbb;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.0976563) 0px -1px 1px;
+  border-radius: 2px;
+}
+
+.nav li.lighter a {
+  color: #aaa;
+}
+
+.content {
+  margin-left: 370px;
+  padding-top: 40px;
+}
+
+.photos > div {
+  display: none;
+}
