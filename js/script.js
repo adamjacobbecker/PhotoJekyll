@@ -13,9 +13,9 @@
     el.find('div:first-child').show();
     el.data('current', 1);
 
-    el.siblings('.photo-nav').on("click", ".forward, .backward", function(){
+    el.parent().on("click", ".photos > div > img, .photo-nav .forward, .photo-nav .backward", function(){
 
-      var nextIndex = el.data('current') + ($(this).hasClass('forward') ? 1 : -1);
+      var nextIndex = el.data('current') + ($(this).hasClass('backward') ? -1 : 1);
       if (nextIndex > el.find('> div').length) nextIndex = 1;
       if (nextIndex < 1) nextIndex = el.find('> div').length;
       el.data('current', nextIndex);

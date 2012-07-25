@@ -1,21 +1,21 @@
 {% include header.ext %}
 
-<div class="photo-nav">
-  <a class="backward">Previous</a> / <a class="forward">Next Image</a>
-  <span class="count">
-    (<span class="current">1</span> of <span class="total">{{ page.photos | size }}</span>)  
-  </span>
-</div>
+  <div class="photo-nav">
+    <a class="backward">Previous</a> / <a class="forward">Next Image</a>
+    <span class="count">
+      (<span class="current">1</span> of <span class="total">{{ page.photos | size }}</span>)  
+    </span>
+  </div>
 
-<div class="photos">
-  {% for photo in page.photos %}
-    <div>
-      <img src="{{page.base_url}}{{photo.filename}}" alt="{{ photo.title }}" />
-      <div class="title">{{ photo.title }}</div>
-      <div class="subtitle">{{ photo.subtitle }}</div>
-    </div>
-  {% endfor %}
-</div>
+  <div class="photos">
+    {% for photo in page.photos %}
+      <div>
+        <img src="{{page.base_url}}{{photo.filename}}" alt="{{ photo.title }}" />
+        <div class="title">{{ photo.title }}</div>
+        <div class="subtitle">{{ photo.subtitle }}</div>
+      </div>
+    {% endfor %}
+  </div>
 
 {% include footer.ext %}
 
