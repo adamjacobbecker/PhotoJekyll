@@ -10,7 +10,7 @@
   <div class="photos">
     {% for photo in page.photos %}
       <div>
-        <img src="{{page.base_url}}{{photo.filename}}" alt="{{ photo.title }}" />
+        <img src="{{site.baseurl}}/{{page.base_url}}{{photo.filename}}" alt="{{ photo.title }}" />
         <div class="title">{{ photo.title }}</div>
         <div class="subtitle">{{ photo.subtitle }}</div>
       </div>
